@@ -1,0 +1,90 @@
+body {
+    background-image: url("images/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.card-title {
+    font-family: "Cedarville Cursive";
+    font-size: 35px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+/*  'Agify me' heading styling */
+.title {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Comforter', cursive;
+    font-size: 75px;
+}
+
+/*  Card  styling */
+.card {
+    min-width: 25vw;
+    backdrop-filter: blur(1.3rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+    
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    border-top-color: rgba(225, 225, 225, 0.5);
+    border-left-color: rgba(225, 225, 225, 0.5);
+    border-right-color: rgba(225, 225, 225, 0.1);
+    border-bottom-color: rgba(225, 225, 225, 0.1);
+}
+
+/* Input trxt and assosciated box */
+input {
+    text-align: center;
+    width: 100%;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 2rem;
+    outline: none;
+    margin: 1rem 0;
+    padding: 0.4rem 0;
+}
+
+::placeholder {
+    text-align: center;
+    color: rgba(225, 225, 225, 0.6);
+    opacity: 1;
+}
+
+/* grey transaprent card body */
+.cb {
+    background-color: rgba(225, 225, 225, 0.1);
+
+}
+
+.AgeDisplay {
+    color: rgba(225, 225, 225, 0.9);
+    font-size: 3rem;
+    z-index: -1;
+
+}
+
+.btn {
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}

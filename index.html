@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Agify</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:wght@300&family=Quintessential&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cedarville+Cursive" />
+  <link href="http://fonts.cdnfonts.com/css/montana" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <!--Developed By => Devansh, Laxmi & Yashika-->
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title text-center py-4 ">Agify Me</h1>
+    <div class="row h-100">
+      <div class="col-md-12 d-flex justify-content-center h-100">
+        <!--- Card -->
+        <div class="card m-6 cb text-center w-100 h-75">
+          <div class="card-body p-6 w-100 d-flex flex-column justify-content-center align-items-center">
+            <div class="AgeDisplay fw-bold  d-flex flex-column align-items-center justify-content-center"
+              id="ageDisplay"><h5 class="card-title mb-4 p-6"> Your Age</h5></div>
+            <div id="reset_button"></div>
+            <div id="input_fields">
+              <input type="text" id="name" placeholder="Enter your name">
+              <p class="card-text d-block p-3">Enter your name to check your age,<br> Let the fun begin !!!!</p>
+              <a href="#" id="button1" class="btn btn-outline-light">See the horoscopic facts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </ div>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <!-------------- Tilt effect-------------------->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400
+      });
+      VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+</body>
+
+</html>
